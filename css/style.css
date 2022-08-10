@@ -1,0 +1,233 @@
+body{
+    background: linear-gradient(45deg, rgba(69,104,220,1) 0%, rgb(226, 99, 226) 100%); ;
+}
+.mainCalculator-div {
+    border: 2px solid black;
+    width: 450px;
+    height: 600px;
+    position: absolute;
+    left: calc(50% - 225px);
+    top: 10%;
+    background: rgb(20,29,38);
+    border-radius: 20px;
+    padding: 30px 20px 30px 20px;
+}
+
+.display-div {
+    width: 100%;
+    height: 30%;
+}
+
+
+.entered-div {
+    color: rgb(135,136,138);
+    font-family: 'Lato';
+    font-size: 20px;
+    text-align: right;
+    height: 20px;
+}
+
+.input {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    /* border-bottom: 2px solid gray; */
+    outline: 0;
+    color: white;
+    padding: 7px;
+    background: transparent;
+    transition: border-color 0.2s;
+    text-align: right;
+    font-family: 'Lato';
+    font-size: 40px;
+    margin-top: 35px;
+}
+
+/* ------ Buttons ------ */
+
+.buttons-div {
+    width: 100%;
+    height: 70%;
+    display: grid;
+    grid-template-areas: 
+    "clear toggle percent multiple"
+    "seven eight nine minus"
+    "four five six plus"
+    "one two three division"
+    "zero zero dot equal";
+    grid-gap: 5px;
+}
+
+.buttons-wide-div {
+    width: 100%;
+    height: 70%;
+    display: grid;
+    grid-template-areas: 
+    "back clear toggle percent multiple"
+    "back seven eight nine minus"
+    "fact four five six plus"
+    "pow one two three division"
+    "sqrt zero zero dot equal";
+    grid-gap: 5px;
+}
+
+.black-buttons {
+    font-family: 'Lato';
+    font-size: 30px;
+    border: none;
+    border-radius: 20px;
+    border-bottom: 2px solid rgb(48,49,54);
+    background: rgb(48,49,54);
+    color: rgb(30,136,220);
+    transition: all 0.4s ease 0s;
+}
+
+.black-buttons:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    background: rgb(81, 82, 87);
+    color: rgb(255, 255, 255);
+}
+
+
+.blue-buttons {
+    font-family: 'Lato';
+    font-size: 30px;
+    border: none;
+    border-radius: 20px;
+    border-bottom: 2px solid rgb(1,93,178);
+    background: rgb(1,93,178);
+    color: rgb(46,170,255);
+    transition: all 0.4s ease 0s;
+}
+
+.blue-buttons:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    background: rgb(8, 127, 238);
+    color: rgb(255, 255, 255);
+}
+
+.gray-buttons {
+    font-family: 'Lato';
+    font-size: 30px;
+    border: none;
+    border-bottom: 2px solid rgb(97,97,97);
+    border-radius: 20px;
+    background: rgb(97,97,97);
+    color: rgb(165,166,168);
+    transition: all 0.4s ease 0s;
+}
+
+.gray-buttons:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    background: rgb(145, 145, 145);
+    color: rgb(255, 255, 255);
+}
+
+#more-button {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    padding-bottom: 40px;
+}
+
+.black-buttons:active, .blue-buttons:active, .gray-buttons:active {
+    border: none;
+    bottom: 1px;
+}
+#clear-button {
+    grid-area: clear;
+}
+
+#toggle-button {
+    grid-area: toggle;
+}
+
+#division-button {
+    grid-area: division;
+}
+
+#multiple-button {
+    grid-area: multiple;
+}
+
+#plus-button {
+    grid-area: plus;
+}
+
+#minus-button {
+    grid-area: minus;
+}
+
+#percent-button {
+    grid-area: percent;
+}
+
+#equal-button {
+    grid-area: equal;
+}
+
+#number0-button {
+    grid-area: zero;
+}
+
+#number1-button {
+    grid-area: one;
+}
+
+#number2-button {
+    grid-area: two;
+}
+
+#number3-button {
+    grid-area: three;
+}
+
+#number4-button {
+    grid-area: four;
+}
+
+#number5-button {
+    grid-area: five;
+}
+
+#number6-button {
+    grid-area: six;
+}
+
+#number7-button {
+    grid-area: seven;
+}
+
+#number8-button {
+    grid-area: eight;
+}
+
+#number9-button {
+    grid-area: nine;
+}
+
+#dot-button {
+    grid-area: dot;
+}
+
+#factorial-button {
+    display: none;
+    grid-area: fact;
+}
+
+#pow-button {
+    display: none;
+    grid-area: pow;
+}
+
+#sqrt-button {
+    display: none;
+    grid-area: sqrt;
+}
+
+#backspace-button {
+    display: none;
+    grid-area: back;
+}
+/* ------ Buttons ------ */

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+        <meta name="description"content="r00. Calculator...">
+        <link rel="stylesheet"href="css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="mainCalculator-div">
+            <div class="display-div">
+                <button name="more-button" id="more-button" class="gray-buttons" onclick="moreFunc()">...</button>
+                <div class="entered-div" id="entered-div"></div>
+                <input type="input" class="input" placeholder="0" name="input" id='input' autofocus disabled/>
+            </div>
+            <div class="buttons-div" id="buttons-div">
+                <button name="number0-button" id="number0-button" class="black-buttons" onclick="enter0()">0</button>
+                <button name="number1-button" id="number1-button" class="black-buttons" onclick="enter1()">1</button>
+                <button name="number2-button" id="number2-button" class="black-buttons" onclick="enter2()">2</button>
+                <button name="number3-button" id="number3-button" class="black-buttons" onclick="enter3()">3</button>
+                <button name="number4-button" id="number4-button" class="black-buttons" onclick="enter4()">4</button>
+                <button name="number5-button" id="number5-button" class="black-buttons" onclick="enter5()">5</button>
+                <button name="number6-button" id="number6-button" class="black-buttons" onclick="enter6()">6</button>
+                <button name="number7-button" id="number7-button" class="black-buttons" onclick="enter7()">7</button>
+                <button name="number8-button" id="number8-button" class="black-buttons" onclick="enter8()">8</button>
+                <button name="number9-button" id="number9-button" class="black-buttons" onclick="enter9()">9</button>
+                <button name="dot-button" id="dot-button" class="black-buttons" onclick="enterDot()">.</button>
+                <button name="plus-button" id="plus-button" class="blue-buttons" onclick="enterPlus()">+</button>
+                <button name="minus-button" id="minus-button" class="blue-buttons" onclick="enterMinus()">-</button>
+                <button name="multiple-button" id="multiple-button" class="blue-buttons" onclick="enterMultiple()">&#65794;</button>
+                <button name="percent-button" id="percent-button" class="blue-buttons" onclick="enterPercent()">%</button>
+                <button name="toggle-button" id="toggle-button" class="blue-buttons" onclick="togle()">+/-</button>
+                <button name="clear-button" id="clear-button" class="gray-buttons" onclick="clearInput()">C</button>
+                <button name="equal-button" id="equal-button" class="blue-buttons" onclick="equals()">=</button>
+                <button name="division-button" id="division-button" class="blue-buttons" onclick="enterDivision()">/</button>
+            
+                <button name="factorial-button" id="factorial-button" class="blue-buttons" onclick="enterFact()">x!</button>
+                <button name="pow-button" id="pow-button" class="blue-buttons" onclick="enterPow()">x<sup>n</sup></button>
+                <button name="sqrt-button" id="sqrt-button" class="blue-buttons" onclick="enterSqrt()">&#8730;</button>
+                <button name="backspace-button" id="backspace-button" class="gray-buttons" onclick="backspaceFunc()">⌫</button>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
