@@ -4,7 +4,7 @@
 This program is a basic calculator that was developed in one working day to get to know with JS basics.   
    
 During developing was implemented:  
-- arithmetic operations **+, *-*, *, /**
+- arithmetic operations **+**, **-**, **\***, **/**
 - result **=**
 - percent **%** (the result is a ration to the current number expressed as a fraction of 100)
 - reset **C** (reset result to default value)
